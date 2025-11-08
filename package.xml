@@ -2,13 +2,29 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>motion_primitives</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="shiryu.nakano@gmail.com">ubuntu</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+  <description>
+    Simple lifecycle-based motion primitives for differential-drive robots.
+    Provides two nodes:
+      - in_place_turn_node: spins the robot in place with constant angular speed.
+      - stop_motion_node: keeps the robot completely stopped.
+  </description>
 
+  <maintainer email="shiryu.nakano@gmail.com">Nakano Shiryu</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- Runtime & build dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- Optional: for logging utilities -->
+  <depend>std_msgs</depend>
+
+  <!-- Test dependencies -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

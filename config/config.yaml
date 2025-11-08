@@ -1,0 +1,5 @@
+# config/in_place_turn.yaml
+in_place_turn_node:
+  ros__parameters:
+    angular_speed: 0.8   # [rad/s]
+
