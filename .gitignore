@@ -1,0 +1,9 @@
+# Editor and OS junk
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Python cache (if any)
+__pycache__/
+*.pyc
